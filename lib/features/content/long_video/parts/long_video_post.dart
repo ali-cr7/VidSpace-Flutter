@@ -33,27 +33,49 @@ class LongVideoPost extends StatelessWidget {
           children: [
             LongVideoPlayerPlaceholder(duration: duration),
             const SizedBox(height: 8),
-            Text(title, style: const TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w600)),
+            Text(
+              title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
             const SizedBox(height: 6),
             Row(
               children: [
-                CircleAvatar(radius: 14, backgroundColor: Colors.grey.shade800, child: Text(author[0], style: const TextStyle(color: Colors.white))),
+                CircleAvatar(
+                  radius: 14,
+                  backgroundColor: Colors.grey.shade800,
+                  child: Text(
+                    author[0],
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                ),
                 const SizedBox(width: 8),
-                Expanded(child: Text(author, style: const TextStyle(color: Colors.white70))),
-                Text('$views • $duration', style: const TextStyle(color: Colors.white54, fontSize: 12)),
+                Expanded(
+                  child: Text(
+                    author,
+                    style: const TextStyle(color: Colors.white70),
+                  ),
+                ),
+                Text(
+                  '$views • $duration',
+                  style: const TextStyle(color: Colors.white54, fontSize: 12),
+                ),
               ],
             ),
             const SizedBox(height: 8),
             Text(description, style: const TextStyle(color: Colors.white60)),
             const SizedBox(height: 10),
             VideoExternalButtons(likes: 1240, comments: 210, shareCount: 64),
-            const Divider(color: Colors.white12),
-            const VideoFirstComment(
-              author: 'Viewer123',
-              avatarLetter: 'V',
-              comment: 'Great video — learned a lot!',
-              timeAgo: '2d',
-            ),
+            const Divider(color: Colors.white54),
+            // const VideoFirstComment(
+            //   author: 'Viewer123',
+            //   avatarLetter: 'V',
+            //   comment: 'Great video — learned a lot!',
+            //   timeAgo: '2d',
+            // ),
           ],
         ),
       ),

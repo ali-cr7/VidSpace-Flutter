@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../widgets/short_video_tile.dart';
 
@@ -16,7 +15,7 @@ class ShortVideoPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text('Shorts'),
+        title: const Text('Shorts', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.black,
       ),
       body: PageView.builder(

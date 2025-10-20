@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/features/content/long_video/parts/long_video_post.dart';
 
-
 class LongVideoScreen extends StatelessWidget {
   const LongVideoScreen({super.key});
 
@@ -39,7 +38,7 @@ class LongVideoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Long Videos'),
+        title: const Text('Long Videos', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.black,
       ),
       backgroundColor: Colors.black,
